@@ -162,3 +162,14 @@ git fetch origin '+refs/heads/*:refs/heads/*'
 ```
 This can be used to create a local branch of all the avaiable remote branches. And will be named automatically according to the branch name.
 
+#### Pulling & Pushing
+```
+git pull
+```
+The git pull command is used to fetch and download content from a remote repository. This happens just to the branch you're currently working on.
+
+```
+git push --set-upstream origin branch
+```
+This sets where on the repository we want to push our local changes.
+
