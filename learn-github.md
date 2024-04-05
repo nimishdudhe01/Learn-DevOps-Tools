@@ -75,3 +75,21 @@ This command helps compare different versions of same file maintained by the rep
 git log
 ```
 There's something knowns as log of the repository, which can be looked at using the command above. After the word commit, there are these special strings which are unique identifier for the commits.
+
+#### Version History & Branches
+```
+git checkout <commit-id>
+```
+This command allows you to view your repository in a previous state without needing to create a new branch or modify an existing branch. It basically takes the repository back in time to a previous commit of your choice.
+
+```
+git branch
+```
+This lists out all the available branches in the repository. To change the branch you want to work on, you need to use the `git checkout <branch-name>` command.
+
+```
+git branch <branch-name>
+```
+This would create a new branch to work on from the current state. To work with the new branch you just made, just use the command `git checkout <branch-name>`.
+
+
