@@ -88,8 +88,34 @@ git branch
 This lists out all the available branches in the repository. To change the branch you want to work on, you need to use the `git checkout <branch-name>` command.
 
 ```
-git branch <branch-name>
+git branch <new-branch-name>
 ```
 This would create a new branch to work on from the current state. To work with the new branch you just made, just use the command `git checkout <branch-name>`.
 
+```
+git branch -B <new-branch-name>
+```
+This makes a new branch and automatically does checkout that branch so that you can start working with the new branch immediately.
+
+```
+git log --graph --all
+```
+This outputs all the commits from all the branches in a graph structure.
+
+```
+git log --oneline --all
+```
+This outputs all the commits from all the branches in separate single lines.
+
+```
+git branch -D <branch-name>
+```
+This command is used to delete an existing branch.
+
+```
+git branch -B <new-branch-name> <existing-branch>
+```
+What this does is creates a new branch from the existing branch that we specified. And performs checkout on the new branch so we can immediately start working on the new branch.
+
+#### Merging & Diffing
 
