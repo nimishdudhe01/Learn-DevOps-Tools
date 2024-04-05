@@ -119,3 +119,18 @@ What this does is creates a new branch from the existing branch that we specifie
 
 #### Merging & Diffing
 
+```
+git diff
+```
+This gives a diff of the non-committed files with the previous commit.
+
+```
+git diff <commit-id-x> <commit-id-y>
+```
+This gives the diff between any 2 commits that you want to differenciate among.
+
+```
+git merge <commit-id-x> <commit-id-y>
+```
+This merges two different branches together into a single branch. 
+
