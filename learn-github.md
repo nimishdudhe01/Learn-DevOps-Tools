@@ -134,3 +134,31 @@ git merge <commit-id-x> <commit-id-y>
 ```
 This merges two different branches together into a single branch. 
 
+### Local vs Remote Branches
+A local branch is the one which exists only on your local machine whereas a remote branch exists in a repository(most commonly referred to as `origin` by convention) and is hosted on GitHub.
+Once you have committed changes to your local branch, you can push the local branch to the remote repository (origin) using the `git push <remote> <local>`. Then, others will be able to see your code.
+```
+git push origin <local-branch-name>
+```
+
+#### Using Remote Branches
+```
+git branch -r
+```
+To view a list of all remote branches in the project, use this command.
+
+```
+git branch -a
+```
+This lists all the branches in a repository, Including remote ones.
+
+```
+git checkout -b <local-name> <remote-name>
+```
+The above command shall be used if you need to work with a remote branch. This will create a local copy of the remote branch and will automatically checkout the branch you just specified.
+
+```
+git fetch origin '+refs/heads/*:refs/heads/*'
+```
+This can be used to create a local branch of all the avaiable remote branches. And will be named automatically according to the branch name.
+
