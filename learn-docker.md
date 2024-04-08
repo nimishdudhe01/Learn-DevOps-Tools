@@ -169,7 +169,7 @@ Let's try using the `python3.11.9-alpine3.19` image for the application, As it w
 
 So according to that, Our dockerfile will look something like this.
 
-```
+``` Dockerfile
 FROM python:3.11.9-alpine3.19
 RUN mkdir /root/app
 WORKDIR /root/app
